@@ -1,5 +1,5 @@
 import { useNavigate} from "react-router-dom";
-import Header from "./header/Header";
+import Header from "../shared/header";
 function Page(){
     // const navigate = useNavigate();
     // return <div onClick={() => navigate('/aboutus')}>HELLO PINAKAMAMAHAL KO</div>

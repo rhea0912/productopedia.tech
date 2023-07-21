@@ -73,7 +73,7 @@ div .search-icon{
     font-weight:bolder;
 }
 div .subscribe{
-    width: 35%;
+    width: 32%;
     height: 100%;
     background-color: #289f73;
     color: white;
@@ -91,10 +91,17 @@ div .subscribe{
     width: 100%;
     height: 40px;
 
+
 }
 .bottom-header a{
     text-decoration: none;
     color: black;
     font-size: 12px;
-    margin-left:10px;
+    margin-left:5px;
+}
+.bottonLinkCom{
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+
 }

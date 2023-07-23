@@ -170,7 +170,10 @@ div .subscribe{
 
     margin: 5% 15%;
     display: flex;
-    position: absolute;
+}
+
+.stay-tune-con{
+    position: relative;
 }
 
 .stay-tune-con h1{
@@ -184,6 +187,9 @@ div .subscribe{
     font-weight: 700;
     margin: 25px 0;
 }
+.input-field{
+    position:relative ;
+}
 .stay-tune-con input{
     width: 500px;
     height: 65px;
@@ -196,8 +202,8 @@ div .subscribe{
 }
 .envelope{
     position: absolute;
-    left:52%;
-    top: 50.5%;
+    left: 20px;
+    top: 15px;
 }
 .submit{
     margin-top: 25px;
@@ -213,3 +219,29 @@ div .subscribe{
     border-radius: 2px;
     cursor: pointer;
 }
+/* #endregion */
+
+/* #region Footer */
+.footer-con{
+    padding: 0 250px;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 125px;
+    color: white;
+}
+.footer-con h2{
+    font-size: 24px;
+    margin-right: 250px;
+    cursor:default;
+}
+.right-footer a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-weight:900;
+    font-size: 20px;
+    margin: 0 30px;
+}
+/* #endregion */

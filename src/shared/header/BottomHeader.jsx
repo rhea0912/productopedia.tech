@@ -13,7 +13,7 @@ return(
         <ButtonLink icon={keyBoard} label="Keyboards"/>
         <ButtonLink icon={computer} label="Computer and Accessories"/>
         <ButtonLink icon={camera} label="Camera"/>
-        <DropDown label="All Categories" icon={ExpandIcon}/>
+        <DropDown label="All Categories" icon={ExpandIcon} classname="icon"/>
     </div>
     </>
 )

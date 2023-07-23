@@ -11,8 +11,9 @@ return(
             <p>Subscribed to our newsletter and stay updated.</p>
             <input type="text"  placeholder="Enter Valid Email"/>
             <img src={envelopeicon} className="envelope"/>
+            <button className="submit">Submit</button>
         </div>
-       
+
     </div>
 )
 }

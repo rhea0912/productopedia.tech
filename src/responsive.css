@@ -1,0 +1,12 @@
+@media(max-width:2500px){
+.card-con-flex{
+    justify-content: center;
+}
+.subscribe-us-con{
+    justify-content: center;
+}
+.footer-con{
+    width: auto;
+    justify-content: center;
+}
+}

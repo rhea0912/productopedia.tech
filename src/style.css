@@ -7,7 +7,11 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     --primary-color: #147484; 
+    --primary-color-light: #AEDBCB;
+
     --secondary-color: #289F73; 
+    --secondary-color-light: #E9FBF5;
+
     --thrid-color:#E9FBF5;
 }
 .container{
@@ -102,6 +106,7 @@ div .subscribe{
     background-color: #E9FBF5;
     width: 100%;
     height: 40px;
+    position: relative;
 }
 .bottom-header a{
     text-decoration: none;
@@ -117,6 +122,79 @@ div .subscribe{
 }
 .icon{
     margin-left: 5px;
+    transition: transform 0.3s;
+}
+
+.dropdown:hover .icon{
+    transform: rotate(180deg);
+}
+
+/* #endregion */
+
+/* #region Dropdown Menu */
+.dropdown{
+    position: relative;
+    height: 100%;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 32px;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 40px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 676px;
+    height: 310px;
+    background-color: white;
+    display: none;
+    padding: 34px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.dropdown-menu .dropdown-menu-item{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: var(--primary-color);
+    padding-left: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.dropdown-menu .dropdown-menu-item:hover{
+    background-color: var(--secondary-color-light);
+}
+
+.dropdown-menu .dropdown-menu-item > :first-child{
+    background-color: var(--primary-color-light);
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.dropdown-menu .dropdown-menu-item img{
+    width: 26px;
+    height: auto;
+    transition: all 0.2s;
+}
+
+.dropdown-menu .dropdown-menu-item:hover img{
+    width: 23px;
+    height: auto;
 }
 /* #endregion */
 
@@ -166,6 +244,7 @@ div .subscribe{
 /* #endregion */
 
 /* #region Subscribe Us */
+
 .subscribe-us-con{
 
     margin: 5% 15%;
@@ -213,3 +292,5 @@ div .subscribe{
     border-radius: 2px;
     cursor: pointer;
 }
+
+/* #endregion */

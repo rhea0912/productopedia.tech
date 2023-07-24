@@ -1,14 +1,26 @@
-function DropDown({ icon, label, classname }) {
+import { Link } from "react-router-dom";
+
+function Dropdown({ items, icon, label, classname }) {
+
   return (
-    <div>
+    <div className="dropdown">
       <div>
         <a href="">{label}</a>
         <img src={icon} width={15} className={classname}/>
       </div>
       <div className="dropdown-menu">
-                
-      </div>
+          {
+            items.map(item => (
+                <Link className="dropdown-menu-item" to='/'>
+                  <div>
+                    <img src={item.iconName} alt="" />
+                  </div>
+                  <div>{item.name}</div>
+                </Link>
+              ))
+          }
+        </div>
     </div>
   );
 }
-export default DropDown;
+export default Dropdown;

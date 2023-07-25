@@ -1,12 +1,126 @@
-@media(max-width:2500px){
-.card-con-flex{
-    justify-content: center;
+* {
+    --primary-color: #147484; 
+    --primary-color-light: #AEDBCB;
+
+    --secondary-color: #289F73; 
+    --secondary-color-light: #E9FBF5;
+
+    --thrid-color:#E9FBF5;
 }
-.subscribe-us-con{
-    justify-content: center;
+@media(max-width:1200px){
+.card-container{
+    width: unset;
 }
-.footer-con{
-    width: auto;
-    justify-content: center;
+.card-con-flex{ 
+    padding: 20px;
+   align-items: center;
+   justify-content: center;
 }
+.card-of-blog{
+    justify-content: center;
+    width:18em;
+    height: 13em;
+}
+.date-of-blog{
+    font-size: 8px
+}
+.title-of-blog{
+    font-size:10px ;
+}
+.notification-gif img{
+    width:20em ;
+}
+.stay-tune-con h1{
+    margin-top: 100px;
+    font-size: 25px;
+}
+.stay-tune-con p{
+    font-size: 13px;
+    margin: 15px 0;
+}
+.stay-tune-con input{
+    width: 350px;
+    height: 40px;
+    padding-left: 50px;
+    font-size: 15px;
+}
+.envelope{
+    width: 30px;
+    left: 10px;
+    top: 5px;
+}
+.submit{
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.footer-con h2{
+    font-size: 18px;
+}   
+.right-footer a{
+    font-size: unset;
+}
+}
+@media(max-width:999px){
+    .top-header-con{
+        justify-content: unset;
+    }
+    .right-header{
+      margin-left: 15vw;
+    }
+    .card-con-flex{
+        padding: unset;
+    }
+    .card-of-blog{
+        width:15em;
+        height: 13em;
+    }
+    .date-of-blog{
+        font-size: 0.9vw;
+    }
+    .title-of-blog{
+        font-size: 1vw;
+    }
+    .notification-gif img{
+        width:15em ;
+    }
+    .stay-tune-con h1{
+        margin-top: 2em;
+        font-size: 15px;
+    }
+    .stay-tune-con p{
+        font-size: 10px;
+        margin: 10px 0;
+    }
+}
+@media(max-width:899px){
+    .card-of-blog{
+       width:12em;
+       height: 10em;
+    }
+    .right-header{
+    display: none;
+    }
+    label{
+    display: block;
+    margin-left: 55vw;
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: color;
+    }
+    label .arrowmenu{
+    display: none;
+    }
+    label img{
+    padding-bottom: 5px;
+    padding-left: 15px;
+    }
+    .bottom-header{
+        display: none;
+    }
 }

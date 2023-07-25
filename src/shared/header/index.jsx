@@ -4,7 +4,6 @@ import BottomHeader from "./BottomHeader";
 function Header(){
    return(
     <div>
-
         <div className="top-header-con container">
             <h1>Productopedia.tech</h1>
             <TopHeader />

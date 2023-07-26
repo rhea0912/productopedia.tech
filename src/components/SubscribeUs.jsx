@@ -2,7 +2,7 @@
 function SubscribeUs({icon, envelopeicon}){
 return(
 
-    <div className="subscribe-us-con">
+    <div className="subscribe-us-con container">
         <div className="notification-gif">
            <img src={icon}  />
         </div>

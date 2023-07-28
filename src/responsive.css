@@ -144,6 +144,7 @@
             position: fixed;
             top: 0;
             left: 0;
+            display: block;
             width: 100vw;
             height: 100vh;
             background-color: white;
@@ -151,24 +152,15 @@
             z-index: 99999;
             box-sizing: border-box;
             overflow: auto;
-        }
-        
-        @keyframes sidebar-open {
-            from { transform: translateX(100vw);}
-            to { transform: translateX(0vw);}
-        }
-
-        @keyframes sidebar-close {
-            from { transform: translateX(0vw);}
-            to { transform: translateX(100vw);}
+            transition: transform 0.25s ease-out;
         }
 
         .sidebar.open{
-            animation: sidebar-open 0.25s ease-out both;
+            transform: translateX(0vw);
         }
         
         .sidebar.close{
-            animation: sidebar-close 0.25s ease-out both;
+            transform: translateX(100vw)
         }
 
         .sidebar-list {

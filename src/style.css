@@ -104,6 +104,13 @@ div .subscribe{
 }
 /* #endregion */
 
+/* #region Sidebar */
+
+.sidebar {
+    display: none;
+}
+
+/* #endregion */
 
 /* #region Bottom Header */
 .bottom-header{

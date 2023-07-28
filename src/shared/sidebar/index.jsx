@@ -1,7 +1,6 @@
 import CategoryItem from "../../components/CategoryItem";
 import Back from '../../assets/svgs/arrow-right.svg';
 
-
 function Sidebar({categoryItems, isOpen, onClose}) {
 
     return (

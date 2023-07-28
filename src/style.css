@@ -5,6 +5,7 @@
 
 * {
     margin: 0;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     --primary-color: #147484; 
     --primary-color-light: #AEDBCB;
@@ -227,12 +228,12 @@ label{
     display: grid;
     justify-content: space-between;
     grid-template-columns:  auto auto auto;
+    gap: 10px;
     padding: 20px;
     width: 100%;
 }
 .card-container{
     width:400px;
-    margin-right: 40px;
     margin-bottom: 70px;
 }
 .card-of-blog{

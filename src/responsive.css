@@ -123,4 +123,44 @@
     .bottom-header{
         display: none;
     }
+
+
+    /* #region Sidebar Menu */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: white;
+            padding-top: 0;
+            z-index: 99999;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+        
+        .sidebar-list {
+            padding: 24px;
+        }
+        
+        .sidebar-list .sidebar-item{
+            border-bottom: 1px solid var(--primary-color-light);
+            height: 60px;
+        }
+
+        .sidebar .back-button{
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: end;
+            background-color: white;
+            padding: 16px 24px;
+            padding-bottom: 0;
+        }
+
+        .back-button img{
+            cursor: pointer;
+        }
+
+    /* #endregion */
 }

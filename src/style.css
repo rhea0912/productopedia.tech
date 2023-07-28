@@ -166,7 +166,7 @@ label{
     border-radius: 6px;
 }
 
-.dropdown-menu .dropdown-menu-item{
+.dropdown-menu-item{
     display: flex;
     align-items: center;
     font-size: 12px;
@@ -174,13 +174,14 @@ label{
     padding-left: 10px;
     cursor: pointer;
     transition: all 0.3s;
+    height: 100%;
 }
 
-.dropdown-menu .dropdown-menu-item:hover{
+.dropdown-menu-item:hover{
     background-color: var(--secondary-color-light);
 }
 
-.dropdown-menu .dropdown-menu-item > :first-child{
+.dropdown-menu-item > :first-child{
     background-color: var(--primary-color-light);
     border-radius: 50%;
     width: 38px;
@@ -192,13 +193,13 @@ label{
     transition: all 0.2s;
 }
 
-.dropdown-menu .dropdown-menu-item img{
+.dropdown-menu-item img{
     width: 26px;
     height: auto;
     transition: all 0.2s;
 }
 
-.dropdown-menu .dropdown-menu-item:hover img{
+.dropdown-menu-item:hover img{
     width: 23px;
     height: auto;
 }

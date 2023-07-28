@@ -4,7 +4,7 @@ function CategoryItem({name, iconName}){
     return (
     <Link className="dropdown-menu-item" to='/'>
         <div>
-        <img src={iconName} alt="" />
+          <img src={iconName} alt="" />
         </div>
         <div>{name}</div>
   </Link>)

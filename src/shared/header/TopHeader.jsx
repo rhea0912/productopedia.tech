@@ -12,11 +12,11 @@ function TopHeader({onClickSideMenuBar}){
                     <button type="button" className="searchBtn"> <FontAwesomeIcon icon={faSearch} className="search-icon" title="search"/></button>
                     <button className="subscribe">SUBSCRIBE</button>
         </div>
-        <label id="check">
-                <img src={search} className="search"/>
-                <img src={menubar} className="menubar" onClick={onClickSideMenuBar}/>
-                <img src={arrowmenu} className="arrowmenu"/>
-        </label>
+        <div className="top-navbar">
+            <img src={search} className="search"/>
+            <img src={menubar} className="menubar" onClick={onClickSideMenuBar}/>
+            <img src={arrowmenu} className="arrowmenu"/>
+        </div>
         </>
     )
 }

@@ -118,24 +118,22 @@
         font-size: 2vw;
     }
     .right-header{
-    display: none;
+        display: none;
     }
     .top-header-con{
         justify-content: space-between;
     }
-    label{
-    display: block;
-    font-size: 50px;
-    cursor: pointer;
-    transition: 0.3s;
-    transition-property: color;
+    .top-navbar{
+        display: flex;
+        column-gap: 16px;
+        font-size: 50px;
     }
-    label .arrowmenu{
-    display: none;
+    .top-navbar .arrowmenu{
+        display: none;
     }
-    label img{
-    padding-bottom: 5px;
-    padding-left: 15px;
+    .top-navbar .menubar
+    {
+        cursor: pointer;
     }
     .bottom-header{
         display: none;
@@ -171,7 +169,7 @@
             justify-content: end;
             background-color: white;
             padding: 16px 24px;
-            padding-bottom: 0;
+            padding-bottom: 8px;
         }
 
         .back-button img{
@@ -275,8 +273,5 @@
 @media(max-width:400px){
     .top-header-con h1{
         font-size: 16px;
-    }
-    label img{
-       width: 40px;
     }
 }

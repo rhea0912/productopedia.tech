@@ -20,9 +20,7 @@ function Header(){
             <TopHeader onClickSideMenuBar={() => toggleSidebar(true)}/>
         </div>
         <BottomHeader categoryItems={testCategoryItems}/> 
-        {
-            gs.isSidebarOpen && <Sidebar categoryItems={testCategoryItems} onClose={() => toggleSidebar(false)}/> 
-        }
+        <Sidebar categoryItems={testCategoryItems} isOpen={gs.isSidebarOpen} onClose={() => toggleSidebar(false)}/> 
     </div>
    )
 }

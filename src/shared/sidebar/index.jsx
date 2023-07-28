@@ -2,10 +2,10 @@ import CategoryItem from "../../components/CategoryItem";
 import Back from '../../assets/svgs/arrow-right.svg';
 
 
-function Sidebar({categoryItems, onClose}) {
+function Sidebar({categoryItems, isOpen, onClose}) {
 
     return (
-        <div className="sidebar">
+        <div className={`sidebar ${isOpen ? 'open' : 'close'}`}>
             <div className="back-button" onClick={onClose}>
                 <img src={Back}/>
             </div>

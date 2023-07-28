@@ -153,6 +153,24 @@
             overflow: auto;
         }
         
+        @keyframes sidebar-open {
+            from { transform: translateX(100vw);}
+            to { transform: translateX(0vw);}
+        }
+
+        @keyframes sidebar-close {
+            from { transform: translateX(0vw);}
+            to { transform: translateX(100vw);}
+        }
+
+        .sidebar.open{
+            animation: sidebar-open 0.25s ease-out both;
+        }
+        
+        .sidebar.close{
+            animation: sidebar-close 0.25s ease-out both;
+        }
+
         .sidebar-list {
             padding: 24px;
         }

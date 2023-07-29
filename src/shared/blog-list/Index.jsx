@@ -3,7 +3,7 @@ import Card from "./Card";
 function BlogList(){
     return(
        <div className="blog-title-con container">
-         <p>All Blogs</p>
+         <p className="blog-title-large">All Blogs</p>
          <div className="line"></div>
          <div className="card-con-flex">
          <Card date="July 15, 2023" title="This is the title of the blog. This is the title of the blog"/>

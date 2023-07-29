@@ -16,12 +16,12 @@ function Page(){
     }, [gs.isSidebarOpen]);
 
     return(
-        <div className="bg">
+        <>
            <Header />
            <BlogList />
            <SubscribeUs icon={notificationGif} envelopeicon={envelope}/>
            <Footer />
-        </div >
+        </>
     )
 }
 

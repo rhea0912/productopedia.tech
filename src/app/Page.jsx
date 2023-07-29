@@ -10,13 +10,10 @@ function Page(){
     // return <div onClick={() => navigate('/aboutus')}>HELLO PINAKAMAMAHAL KO</div>
     return(
         <>
-        <div className="bg">
            <Header />
            <BlogList />
            <SubscribeUs icon={notificationGif} envelopeicon={envelope}/>
            <Footer />
-        </div >
-        
         </>
     )
 }

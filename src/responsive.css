@@ -142,28 +142,75 @@
         font-size: 2vw;
     }
     .right-header{
-    display: none;
+        display: none;
     }
     .top-header-con{
         justify-content: space-between;
     }
-    label{
-    display: block;
-    font-size: 50px;
-    cursor: pointer;
-    transition: 0.3s;
-    transition-property: color;
+    .top-navbar{
+        display: flex;
+        column-gap: 16px;
+        font-size: 50px;
     }
-    label .arrowmenu{
-    display: none;
+    .top-navbar .arrowmenu{
+        display: none;
     }
-    label img{
-    padding-bottom: 5px;
-    padding-left: 15px;
+    .top-navbar .menubar
+    {
+        cursor: pointer;
     }
     .bottom-header{
         display: none;
     }
+
+    /* #region Sidebar Menu */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            background-color: white;
+            padding-top: 0;
+            z-index: 99999;
+            box-sizing: border-box;
+            overflow: auto;
+            transition: transform 0.25s ease-out;
+        }
+
+        .sidebar.open{
+            transform: translateX(0vw);
+        }
+        
+        .sidebar.close{
+            transform: translateX(100vw)
+        }
+
+        .sidebar-list {
+            padding: 24px;
+        }
+        
+        .sidebar-list .sidebar-item{
+            border-bottom: 1px solid var(--primary-color-light);
+            height: 60px;
+        }
+
+        .sidebar .back-button{
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: end;
+            background-color: white;
+            padding: 16px 24px;
+            padding-bottom: 8px;
+        }
+
+        .back-button img{
+            cursor: pointer;
+        }
+
+    /* #endregion */
 }
 @media(max-width:650px){
     .notification-gif img{
@@ -260,8 +307,5 @@
 @media(max-width:400px){
     .top-header-con h1{
         font-size: 16px;
-    }
-    label img{
-       width: 40px;
     }
 }

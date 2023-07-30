@@ -124,6 +124,7 @@
         position: relative;
         justify-content: space-between;
         height: 70px;
+        overflow: hidden;
     }
 
     .top-header-con .clear.visible{

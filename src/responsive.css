@@ -126,6 +126,14 @@
         height: 70px;
     }
 
+    .top-header-con .clear.visible{
+        position: absolute;
+        right: 65px;
+        bottom: 50%;
+        transform: translateY(50%);
+        display: block;
+    }
+
     .top-navbar{
         display: flex;
         column-gap: 16px;

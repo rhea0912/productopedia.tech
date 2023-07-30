@@ -49,6 +49,11 @@ button{
     padding: 20px;
     align-items: center;
 }
+
+.top-header-con .clear, .top-header-con .clear.visible{
+    display: none;
+}
+
 .top-header-con h1{
     color: var(--primary-color);
     font-weight: bold;

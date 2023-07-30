@@ -121,23 +121,67 @@
         display: none;
     }
     .top-header-con{
+        position: relative;
         justify-content: space-between;
+        height: 70px;
     }
+
     .top-navbar{
         display: flex;
         column-gap: 16px;
         font-size: 50px;
+        position: absolute;
+        right: 20px;
+        transition: all 0.3s;
     }
+
     .top-navbar .arrowmenu{
         display: none;
     }
-    .top-navbar .menubar
-    {
-        cursor: pointer;
-    }
+
     .bottom-header{
         display: none;
     }
+
+    .top-header-con h1{
+        position: absolute;
+        left: 20px;
+        transition: all 0.2s linear;
+        z-index: 10;
+    }
+
+    .top-header-con .search-input-mobile{
+        display: block;
+        position: absolute;
+        right: 90px;
+        height: 25px;
+        width: 0;
+        background-color: white;
+        border: none;
+        border-bottom: 1px solid var(--secondary-color);
+        padding: 0;
+        transition: all 0.3s;
+    }
+
+    /* #region Search Click Transition */
+    .top-header-con h1.hidden{
+        position: absolute;
+        left: calc(20px - 100vw);
+    }
+
+    .top-header-con .top-navbar.hidden{
+        gap: 50px;
+        position: absolute;
+        right: -50px;
+    }
+
+    .top-header-con .search-input-mobile.show{
+        right: 60px;
+        padding: 5px;
+        width: calc(100% - 90px)
+    }
+
+/* #endregion */
 
     /* #region Sidebar Menu */
         .sidebar {

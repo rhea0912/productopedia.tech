@@ -1,16 +1,17 @@
-import {createContext, useState, useContext} from "react";
-
+import {createContext, useReducer, useContext} from "react";
+import appReducer from "./appSlice";
 
 const GlobalStateContext = createContext ();
 
 const initialState = {
     isSidebarOpen: false,
+    isMobileSearchOpen: false,
 }
 
 const GlobalStateProvider = ({children}) => {
-    const [globalState, setGlobalState] = useState(initialState);
+    const [state, dispatch] = useReducer(appReducer, initialState);
 
-    return <GlobalStateContext.Provider value={[globalState, setGlobalState]}>
+    return <GlobalStateContext.Provider value={[state, dispatch]}>
         {children}
     </GlobalStateContext.Provider>
 }

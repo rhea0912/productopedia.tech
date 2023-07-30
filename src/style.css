@@ -15,11 +15,11 @@
 
     --thrid-color:#E9FBF5;
 }
+
 .container{
     margin: 0 auto;
     max-width: 1500px;
     min-width: 950px;
-
 }
 /* body{
     margin: 0;
@@ -57,11 +57,21 @@ button{
     padding: 20px;
     align-items: center;
 }
+
+.top-header-con .clear, .top-header-con .clear.visible{
+    display: none;
+}
+
 .top-header-con h1{
     color: var(--primary-color);
     font-weight: bold;
     font-size: 24px;
 }
+
+.top-header-con .search-input-mobile{
+    display: none;
+}
+
 .right-header{
     box-sizing: border-box;
     height: 45px;

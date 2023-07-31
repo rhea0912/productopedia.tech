@@ -63,11 +63,13 @@ button{
 }
 
 .top-header-con h1{
-    color: var(--primary-color);
     font-weight: bold;
     font-size: 24px;
 }
-
+.top-header-con h1 a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
 .top-header-con .search-input-mobile{
     display: none;
 }
@@ -286,12 +288,22 @@ div .subscribe{
     width:400px;
     margin-bottom: 70px;
 }
+.card-container > a{
+    text-decoration: none;
+}
+
 .card-of-blog{
     width: 399px;
     height: 314px;
     background-color: var(--thrid-color);
     border: 1px solid #AEDBCB;
 }
+.card-of-blog a.link{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
 .date-of-blog{
     font-size: 14px;
     font-weight: 500;

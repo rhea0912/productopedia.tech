@@ -17,6 +17,7 @@ function Header(){
     }
 
     const openMobileSearch = (open, clickedFromButton) => {
+        console.log('isOpen: ', open);
         if(!open && clickedFromButton)
         {
             //Check if the inputfield has value then do some search operation

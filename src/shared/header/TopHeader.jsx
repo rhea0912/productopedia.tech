@@ -5,6 +5,7 @@ import search from '../../assets/svgs/search.svg'
 import close from '../../assets/svgs/close.svg'
 import arrowmenu from '../../assets/svgs/arrowmenu.svg'
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 function TopHeader({text="", isSearchInputOpen=false, onOpenSearchInput, onOpenSidebar, onInputChange, onClear}){
     const inputRef = useRef(null);
@@ -15,13 +16,11 @@ function TopHeader({text="", isSearchInputOpen=false, onOpenSearchInput, onOpenS
 
     useEffect(() => {
         const listener = document.addEventListener('click', (e) => {
+            //If search inputfield, search button, and clear button doesn't clicked, then close the search inputfield
             const { target } = e;
-            const elements = [
-                inputRef.current,
-                searchButtonRef.current,
-                clearRef.current,
-            ]
-            if(!elements.includes(target))
+            if(inputRef.current && !inputRef.current.contains(target) 
+                && searchButtonRef.current && !searchButtonRef.current.contains(target)
+                && clearRef.current && !clearRef.current.contains(target))
             {
                 onOpenSearchInput(false);
             }
@@ -32,7 +31,9 @@ function TopHeader({text="", isSearchInputOpen=false, onOpenSearchInput, onOpenS
 
     return (
         <div className="top-header-con container">
-            <h1 className={`${isSearchInputOpen ? 'hidden' : ''}`}>Productopedia.tech</h1>
+            <h1 className={`${isSearchInputOpen ? 'hidden' : ''}`}>
+                <Link to="/">Productopedia.tech</Link>
+            </h1>
             <div className="right-header">
                 <input type="text" className="search" placeholder="Search" onChange={onInputChange} value={text}/>
                 <button type="button" className="searchBtn"> <FontAwesomeIcon icon={faSearch} className="search-icon" title="search"/></button>

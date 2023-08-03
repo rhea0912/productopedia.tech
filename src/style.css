@@ -474,3 +474,31 @@ div .subscribe{
     padding-left: 20px;
 }
 /* #endregion */
+
+
+/* #region About us*/
+
+.about-us-content{
+    display: flex;
+    padding: 20px;
+    
+}
+.left-content div{
+    display: flex;
+    align-items: center;
+}
+.left-content img:hover{
+    cursor: pointer;
+}
+
+.aboutus-right-content img{
+    padding-top: 30px;
+}
+.container .blog-title-large{
+    font-size: 64px;
+    font-weight: bolder;
+    margin-top: 0;
+    padding:40px 20px;
+  }
+    
+/* #endregion */
